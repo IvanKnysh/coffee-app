@@ -9,7 +9,7 @@ const Modal = ({ modal, setModal }) => {
 			<div className={style.modal__window}>
 				<h1>Інгридієнти</h1>
 				<ul>
-					{ modal.map(item => <li key={item.class_name}>{item.name} - {item.volume}</li>) }
+					{ modal.map(item => <li key={item.id}>{item.name} - {item.volume}</li>) }
 				</ul>
 				<div className={style.btn} onClick={() => setModal(null)}>X</div>
 			</div>
