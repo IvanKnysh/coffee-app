@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=cyrillic-ext');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  color: #410202
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+  width: 960px;
+  margin: 10px auto;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper > div {
+  float: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coffee {background-color: #410202;}
+.water {background-color: #5cc0fe;}
+.milk {background-color: #ffffff;}
+.foam {background-color: #eafeff;}
+.cream {background-color: #fcfbdd;}
+span {
+  color: red;
+}
+button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 50px;
+  border: none;
+  background: #333;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
 }

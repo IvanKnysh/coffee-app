@@ -1,0 +1,32 @@
+.cup {
+  background-color: #eaeaea;
+  position:relative;
+  width:690px;
+  height:611px;
+  .inner {
+    height:365px;
+    position:absolute;
+    bottom:165px;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction:column-reverse;
+    & > div {
+      height:70px;
+      text-align: center;
+      &:after {
+        color:#fff;
+        display:inline-block;
+        padding: 10px 40px;
+      }
+    }
+  }
+  .cup_front {
+    position:absolute;
+    background-image: url('../../images/pic.png');
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+  }
+}
