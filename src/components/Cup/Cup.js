@@ -1,5 +1,6 @@
 import React from 'react';
 import CupInner from "./CupInner";
+import Button from "./Button";
 import styles from './Cup.module.scss';
 
 const Cup = ({ currentRecept, setModal}) => {
@@ -8,7 +9,7 @@ const Cup = ({ currentRecept, setModal}) => {
 		<div className={styles.cup}>
 			<CupInner recept={currentRecept} />
 			<div className={styles.cup_front} />
-			<button onClick={() => setModal(currentRecept)}>Подробиці</button>
+			<Button currentRecept={currentRecept} setModal={setModal} />
 		</div>
 	);
 };
